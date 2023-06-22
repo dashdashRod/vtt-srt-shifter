@@ -37,34 +37,4 @@ def funcao_positiva(nome_arquivo:str,segundos:int,operator:bool,sub_type:bool):
     with open(final_name,'w') as f:
         f.writelines(final)
     print('Finished\n')
-    
-
-nome_arquivo = 'KuroNeko-Subtitles.vtt'
-new_nome = 'I.Live.In.Fear.English-WWW.MY-SUBS.CO.srt'
-# funcao(nome_arquivo=nome_arquivo,segundos=0)
-
-# algo = 70
-# novo = 35
-# # converted = time.strptime(algo).strftime('%M:%S.%f')
-# # print(datetime.strftime('%M:%S.%f',time.gmtime(algo)))
-# result = datetime.fromtimestamp(algo).strftime('%M:%S.%f')[:-3]
-# # novo = datetime.fromtimestamp(novo).strftime('%M:%S.%f')[:-3]
-# # print(datetime.strptime(result,'%M:%S.%f') + datetime.strptime(novo,'%M:%S.%f'))
-# resultado = datetime.fromtimestamp(algo).strftime('%M:%S.%f')[:-3]
-# final = datetime.strptime(resultado,'%M:%S.%f')
-# final = datetime.strftime(final,'%M:%S.%f')
-# print(final)
-
-if __name__ == '__main__':
-    nome_arquivo = new_nome
-    if(splitext(nome_arquivo)[1] == '.vtt'):
-        temp = True
-    else:
-        temp = False
-    funcao_positiva(nome_arquivo=nome_arquivo,segundos=8,operator=False,sub_type=temp)
-
-
-
-
-
 
