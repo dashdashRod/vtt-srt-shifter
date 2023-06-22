@@ -16,7 +16,6 @@ def funcao_positiva(nome_arquivo:str,segundos:int,operator:bool,sub_type:bool):
                     final1 = [datetime.strptime(result[0],'%M:%S.%f') + timedelta(seconds=segundos),datetime.strptime(result[1],'%M:%S.%f') + timedelta(seconds=segundos)]
                 else:
                     final1 = [datetime.strptime(result[0],'%M:%S.%f') - timedelta(seconds=segundos),datetime.strptime(result[1],'%M:%S.%f') - timedelta(seconds=segundos)]
-                #NOTE print(f"primeiro valor {datetime.strftime(final[0],'%M:%S.%f')[:-3]}  Segundo valor {datetime.strftime(final[1],'%M:%S.%f')[:-3]}")
                 x = x.replace(result[0],datetime.strftime(final1[0],'%M:%S.%f')[:-3])
                 x = x.replace(result[1],datetime.strftime(final1[1],'%M:%S.%f')[:-3])
                 if(sub_type == False):
@@ -27,7 +26,6 @@ def funcao_positiva(nome_arquivo:str,segundos:int,operator:bool,sub_type:bool):
                     final2 = [datetime.strptime(result[0],'%H:%M:%S.%f') + timedelta(seconds=segundos),datetime.strptime(result[1],'%H:%M:%S.%f') + timedelta(seconds=segundos)]
                 else:
                     final2 = [datetime.strptime(result[0],'%H:%M:%S.%f') - timedelta(seconds=segundos),datetime.strptime(result[1],'%H:%M:%S.%f') - timedelta(seconds=segundos)]
-                #NOTE  print(f"primeiro valor {datetime.strftime(final2[0],'%H:%M:%S.%f')[:-3]}  Segundo valor {datetime.strftime(final2[1],'%H:%M:%S.%f')[:-3]}")
                 x = x.replace(',','.')
                 x = x.replace(result[0],datetime.strftime(final2[0],'%H:%M:%S.%f')[:-3])
                 x = x.replace(result[1],datetime.strftime(final2[1],'%H:%M:%S.%f')[:-3])
@@ -63,7 +61,7 @@ if __name__ == '__main__':
         temp = True
     else:
         temp = False
-    funcao_positiva(nome_arquivo=nome_arquivo,segundos=20,operator=True,sub_type=temp)
+    funcao_positiva(nome_arquivo=nome_arquivo,segundos=8,operator=False,sub_type=temp)
 
 
 
