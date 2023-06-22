@@ -14,6 +14,8 @@ if __name__ == '__main__':
         temp = True #Boolean for vtt or srt
     elif(correction.splitext(name_file)[1] == '.srt'):
         temp = False
+    else:
+        raise('File type not accepted, must be vtt or srt')
     if(args.plus):
         r = int(args.plus)
         t = True #Operator Plus
