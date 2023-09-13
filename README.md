@@ -7,6 +7,6 @@ solving the problem of wrong timestamps related to video captions files and the 
 
 -i, --input, for the input file, accepting only .vtt or .srt files
 
--p, --plus, Add the amount of seconds to be shifted (Only in secods)
+-p, --plus, Add the amount of seconds to be shifted (Only in seconds)
 
 -m,--minus, Subtract the amount of seconds to be shifted
